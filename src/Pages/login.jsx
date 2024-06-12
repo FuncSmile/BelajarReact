@@ -3,7 +3,7 @@ import AuthLayout from "../components/layouts/AuthLayout"
 
 const LoginPage = () => {
     return (
-        <AuthLayout heading="Login">
+        <AuthLayout heading="Login" type="login">
             <FromLogin/>
         </AuthLayout>
     )

@@ -30,10 +30,6 @@ const FormRegister = () => {
         placeholder="*******" 
         />
         <Button classname="bg-blue-600 w-full">Register</Button>
-        <p className="text-center text-sm mt-8">have an account 
-          <Link to="/login" className="font-bold text-blue-700"> Login</Link>
-          </p>
-
       </form>
     )
 }
