@@ -5,8 +5,9 @@ import React from "react";
 const FromLogin = () => {
 const handleLogin = (event)=> {
  localStorage.setItem('email', event.target.email.value )
- localStorage.setItem('email', event.target.password.value)
+ localStorage.setItem('password', event.target.password.value)
  event.preventDefault()
+ window.location.href = '/admin'
 }
   return (
     <form onSubmit={handleLogin}>
