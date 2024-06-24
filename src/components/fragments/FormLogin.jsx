@@ -3,8 +3,13 @@ import InputFrom from "../Elements/Input"
 import React from "react";
 
 const FromLogin = () => {
+const handleLogin = (event)=> {
+ localStorage.setItem('email', event.target.email.value )
+ localStorage.setItem('email', event.target.password.value)
+ event.preventDefault()
+}
   return (
-    <form action="">
+    <form onSubmit={handleLogin}>
       <InputFrom
         labelTitle="Email"
         typeInput="email"
@@ -17,7 +22,10 @@ const FromLogin = () => {
         name="password"
         placeholder="*******"
         />
-      <Button classname="bg-blue-600 w-full">LOGIN</Button>
+      <Button 
+	classname="bg-blue-600 w-full"
+	type= 'submit'
+	>LOGIN</Button>
     </form>
   )
 }

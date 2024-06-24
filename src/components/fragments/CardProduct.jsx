@@ -3,7 +3,7 @@ const CardProduct = (props) => {
   const { children } = props
   return(
     <div
-    className='w-full max-w-sm bg-slate-100 border border-gray rounded-lg shadow p-8'
+    className='w-full max-w-sm bg-slate-100 border border-gray rounded-lg shadow p-8 flex flex-col justify-between'
     >
         {children}
     </div>
@@ -16,7 +16,7 @@ const HeaderCard = ({ Images }) => {
         <img
         src={Images}
         alt="product"
-        className='rounded-t-lg' />
+        className='rounded-t-lg md:w-[350px] h-[450px] bg-cover' />
       </a>
   )
 }
@@ -24,7 +24,7 @@ const HeaderCard = ({ Images }) => {
 const BodyCard = ({ children, HeadBody }) => {
   return(
     <div
-    className="pt-4"
+    className="pt-4 h-full"
     >
       <a>
         <h5
